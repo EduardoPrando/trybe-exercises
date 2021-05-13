@@ -1,0 +1,28 @@
+h1 {
+    size: 65px;
+    color: orange;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-weight: 600;
+}
+body {
+background-color: indigo;
+font-size: 16px;
+}
+ul {
+    background-color: green;
+}
+p {
+color: khaki;
+font-family: monospace;
+font-size: 3em;
+}
+.backpul{
+background-color: grey;
+font-size: 30px;
+text-align: center;
+text-decoration: underline;
+}
+h2 {
+    background-color: antiquewhite;
+}
