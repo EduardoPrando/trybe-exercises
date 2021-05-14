@@ -1,4 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#bg {
+    background-color:rgb(228, 199, 178) ;
+}
+div {
+    margin: 30px;
+    width: 300px;
+}
 div:hover {
-    color: black;
-    border-color: black;
+    border-style:solid;
+    border-width: 4px;
+}
+#primary {
+    font-style: italic;
+    border-color: blue;
+}
+#secondary {
+    border-color: orange;
+}
+#complementar {
+    font-style: italic;
+    border-color: purple;
+    width: 600px;
+}
+#dark {
+    border-color: brown;
+}
+#clear {
+    font-style: italic;
+    border-color:greenyellow;
 }
