@@ -198,3 +198,4 @@ if (discountINSS > 1903.98){
   console.log ('IR Isent');
 }
 console.log('Total discount IR = ', discountIR);
+123
