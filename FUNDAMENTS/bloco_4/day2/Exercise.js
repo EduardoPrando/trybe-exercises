@@ -1,4 +1,4 @@
-//let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27]
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27]
 // Exercise 1
 // for (let num of numbers) {
 //   console.log(num);
@@ -58,12 +58,13 @@
 // }
 
 // Exercise 7
-// let smaller = 50;
-// for (let index of numbers) {
-//   if (index < smaller)
-//   smaller = index
+// let smaller = numbers[0];
+// for (let element of numbers) {
+//   if (element < smaller)
+//   smaller = element
 // }
-// console.log(smaller)
+// console.log(element)
+
 
 // Exercise 8
 // let array = [];
@@ -75,9 +76,9 @@
 // font https://stackoverflow.com/questions/28620087/print-an-output-in-one-line-using-console-log
 
 // Exercise 9
-let array = [];
+// let array = [];
 
-for (let index = 0; index <= 25; index += 1) {
-  array.push(index/2)
-}
-console.log(array);
+// for (let index = 0; index <= 25; index += 1) {
+//   array.push(index/2)
+// }
+// console.log(array);
