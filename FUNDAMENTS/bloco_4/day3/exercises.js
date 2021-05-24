@@ -26,11 +26,12 @@
 
 let n = 5;
 let space = '';
-let aste = '';
+let asterisk = '';
 for (let index = 0; index < n; index += 1){
   for (let index2 = 0; index2 < n - index; index2 += 1){
     space += ' ';
-  } aste += '*';
-  console.log(space, aste);
+  }
+  asterisk += '*';
+  console.log(space, asterisk);
   space = ''
 }
