@@ -14,7 +14,15 @@
 //   console.log(i, car[i]);
 // }
 
-// Exercise 1
+/* Exercise 1
+Usando o objeto abaixo, utilize For/in e imprima no console a mensagem 'Olá xxxxx' para cada nome, substituindo o xxxxx pelo nome em questão.
+Copiar
+let names = {
+  person1: 'João',
+  person2: 'Maria',
+  person3: 'Jorge' 
+};*/
+
 // let names = { 
 //   person1: 'João',
 //   person2: 'Maria',
@@ -24,7 +32,15 @@
 //   console.log('Olá ', names[i]);
 // }
 
-// Exercise 2
+/* Exercise 2
+Usando o objeto abaixo, utilize For/in e imprima um console.log com as chaves e valores desse objeto.
+Copiar
+let car = {
+  model: 'A3 Sedan',
+  manufacturer: 'Audi',
+  year: 2020
+};*/
+
 // let car = {
 //   model: 'A3 Sedan',
 //   manufacturer: 'Audi',
