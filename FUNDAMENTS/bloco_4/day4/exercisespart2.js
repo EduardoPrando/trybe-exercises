@@ -89,7 +89,9 @@ Valor esperado no retorno da função: 2 .*/
 let ar = [2, 3, 2, 5, 8, 2, 3];
 function numberRepeat (a) {
   for (let i of ar) {
-    
+    for (let j = 0; j < a.length; j +=1 ){
+      
+    }
   }
 }
 console.log(numberRepeat(ar));
