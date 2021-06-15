@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Exercise 6.1</title>
+</head>
+<body>
+  <form action="" method="GET" >
+    <fieldset class="margin-all">
+      <legend>Dados</legend>
+      <label action="name-input"></label>Name:
+      <input type="text" name="name" id="name-input" required maxlength="40">
+      <br>
+      <label action="email-input"></label>e-mail:
+      <input type="email" name="e-mail" id="email-input" maxlength="50" required>
+      <br>
+      <label action="cpf-input"></label>CPF:
+      <input type="number" name="cpf" id="cpf-input" maxlength="11" required>
+      <br>
+      <label action="addresse-input"></label>Endereço:
+      <input type="text" name="addresse" id="addresse-input" maxlength="200" required>
+      <br>
+      <label action="city-input"></label>Cidade:
+      <input type="text" name="city" id="city-input">
+      <br>
+      <label action="state-select"></label>Estado:
+      <select name="state" id="state-select">
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+        <option value="EX">Estrangeiro</option>
+      </select>
+      <br>
+      <p>Tipo de Moradia:</p> 
+      <label for="house-input">
+        <input type="radio" name="home" id="house-input">Casa
+      </label>
+      <label for="ap-input">
+        <input type="radio" name="home" id="ap-input">Apartamento
+      </label>
+    </fieldset>
+    <fieldset class="margin-all">
+      <label for="resume-textarea"></label>Resumo do currículo
+      <br>
+      <textarea name="resume" id="resume-textarea" rows="15" maxlength="1000"></textarea required>
+      <br>
+      <label for="office-input"></label>Cargo
+      <input type="text" name="office" id="office-input" maxlength="40">
+      <br>
+      <label for="job-description"></label>Descrição do cargo
+      <input type="text" name="description" id="job-description" maxlength="500">
+      <br>
+      <label for="date-input"></label>
+      <input type="text" name="date" id="date-input">
+    </fieldset>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

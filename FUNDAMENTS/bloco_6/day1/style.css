@@ -1,0 +1,14 @@
+* {
+  margin: 5px;
+  padding: 0;
+}
+
+.margin-all{
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;  
+}
+
+#resume-textarea {
+  width: 50%;
+}
