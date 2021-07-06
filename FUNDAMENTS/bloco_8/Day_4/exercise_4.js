@@ -1,4 +1,3 @@
-/*  7 - Faça uma função que retorne true , caso nenhum author tenha nascido no mesmo ano, e false , caso contrário.*/
 const assert = require('assert');
 
 const books = [
@@ -64,8 +63,20 @@ const books = [
   },
 ];
 
-const expectedResult = false;
+/*  4 - Encontre o livro com o maior nome.*/
 
-const authorUnique = books => books.every((book) => books.some((birth) => (birth.birthYear === book.author.birthYear) && (birth.author.name !== book.author.name)));
+const expectedResult = {
+  id: 1,
+  name: 'As Crônicas de Gelo e Fogo',
+  genre: 'Fantasia',
+  author: {
+    name: 'George R. R. Martin',
+    birthYear: 1948,
+  },
+  releaseYear: 1991,
+};
 
-assert.strictEqual(authorUnique(books), expectedResult);
+const longestNamedBook = biggestName => biggestName
+  .reduce((accumulator, currentValue) => currentValue.name.length > accumulator.name.length ? accumulator = currentValue : accumulator);
+
+assert.deepStrictEqual(longestNamedBook(books), expectedResult);
