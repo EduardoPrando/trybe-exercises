@@ -84,4 +84,5 @@ function getNamedBook(bookName) {
   });
   return biggestName;
 }
+
 assert.deepStrictEqual(getNamedBook(books), expectedResult);

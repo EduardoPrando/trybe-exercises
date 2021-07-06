@@ -1,4 +1,3 @@
-/*  7 - Faça uma função que retorne true , caso nenhum author tenha nascido no mesmo ano, e false , caso contrário.*/
 const assert = require('assert');
 
 const books = [
@@ -64,8 +63,10 @@ const books = [
   },
 ];
 
-const expectedResult = false;
+const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
 
-const authorUnique = books => books.every((book) => books.some((birth) => (birth.birthYear === book.author.birthYear) && (birth.author.name !== book.author.name)));
+function reduceNames(books) {
+  return books.reduce((accumulator, { author }, i) => (books.length-1 !== i) ? accumulator += `${author.name}, ` : `${accumulator}${author.name}.`, '');
+}
 
-assert.strictEqual(authorUnique(books), expectedResult);
+assert.strictEqual(reduceNames(books), expectedResult);
