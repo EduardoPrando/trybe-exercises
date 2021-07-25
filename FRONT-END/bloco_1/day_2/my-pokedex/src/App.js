@@ -1,4 +1,4 @@
-import './App.css';
+
 import PokemonCardCreation from './components/PokemonCardCreation';
 
 function App() {
